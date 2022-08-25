@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "compile": "tsc  && cp -r ./public/* ./dist/",
+    "build": "webpack",
     "serve": "npx webpack serve",
     "dev": "npm run compile && npm run serve",
     "start": "node serve dist/index.js"
