@@ -1,0 +1,37 @@
+.add-button {
+    height: 35px;
+    width: 130px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    border: none;
+    align-self: center;
+    position: absolute;
+    bottom: -17px;
+    right: -35px;
+    border-radius: 20px 5px 5px 20px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    display: flex;
+}
+
+.add-button:hover {
+    background-color: var(--main-color-dark);
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 20px;
+    display: block;
+    top: 5px;
+    position: absolute;
+    left: 15px;
+}
+
+.add-button-text {
+    margin-bottom: 20px;
+    display: block;
+    left: 45px;
+    position: absolute;
+    top: 11px;
+}

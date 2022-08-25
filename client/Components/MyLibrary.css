@@ -1,0 +1,11 @@
+.library {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 60px;
+}
+
+.library::after {
+  content: '';
+  flex: auto;
+}

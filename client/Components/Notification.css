@@ -1,0 +1,44 @@
+.notification-container {
+  margin-bottom: 1px;
+  margin-left: 1px;
+  width: 200px;
+  height: auto;
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  display: flex;
+  border-radius: 15px;
+  background-color: var(--main-color);
+  padding: 17px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.notification {
+  color: var(--second-color);
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.undo-button {
+  color: var(--second-color);
+  outline: none;
+  background: transparent;
+  border: none;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.error {
+  opacity: 1;
+}
+
+.success {
+  opacity: 1;
+}
+
+.invincible {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}

@@ -1,0 +1,11 @@
+.card {
+  width: 179x;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  padding: 19px;
+  background-color: var(--third-color);
+}
+.book-card {
+  margin: 30px 40px;
+}

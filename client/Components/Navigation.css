@@ -1,0 +1,25 @@
+.nav-bar {
+    height: 52px;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    width: auto;
+}
+
+.nav-listpoint{
+    margin: 32px;
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 1.3rem;
+}
+
+.nav-listpoint:hover {
+    color: var(--second-color-5);
+}

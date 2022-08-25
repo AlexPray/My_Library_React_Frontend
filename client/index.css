@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+:root {
+  --main-color: #d5b15f;
+  --main-color-dark: #bd9e55;
+  --main-color-5: #d5b25fd1;
+  --second-color: #292929;
+  --second-color-light: #747474;
+  --second-color-5: #2929299e;
+  --third-color: #f7efdf;
+}
+
+body {
+  background-color: var(--third-color);
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+* {
+  box-sizing: border-box;
+}

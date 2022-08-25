@@ -1,0 +1,37 @@
+.remove-button {
+    height: 35px;
+    width: 130px;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    border: none;
+    align-self: center;
+    position: absolute;
+    bottom: -17px;
+    right: -35px;
+    border-radius: 20px 5px 5px 20px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Lora', serif;
+    display: flex;
+}
+
+.remove-button:hover {
+    background-color: var(--main-color-dark);
+    cursor: pointer;
+}
+
+.minus {
+    font-size: 17px;
+    display: block;
+    top:4px;
+    position: absolute;
+    left: 20px;
+}
+
+.remove-button-text {
+    margin-bottom: 20px;
+    display: block;
+    left: 45px;
+    position: absolute;
+    top: 10px;
+}
