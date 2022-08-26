@@ -13,7 +13,12 @@ const RemoveButton = ({
 }) => {
 
   const RemoveButtonHandler = async () => {
-    const res = await axios.delete(`http://localhost:3030/removeBook`, { data: book });
+    let url = 'https://mylibrary-backend-alex.herokuapp.com/removeBook';
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:3030/removeBook';
+    }
+
+    const res = await axios.delete(url, { data: book });
     onChange(res);
   };
   

@@ -18,8 +18,13 @@ const MyLibrary = () => {
   }, []);
 
   const fetchBooksHandler = () => {
+    let url = 'https://mylibrary-backend-alex.herokuapp.com/getBooks';
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:3030/getBooks';
+    }
+
     axios
-      .get('http://localhost:3030/getBooks')
+      .get(url)
       .then((response) => {
         return response.data;
       })
