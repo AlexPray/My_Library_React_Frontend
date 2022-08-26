@@ -1,24 +1,42 @@
 const path = require('path');
+const webpack = require("webpack");
+const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './client/index.tsx',
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        use: ['ts-loader'],
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
+  entry: __dirname + '/client/index.tsx',
+  output: {
+    path: __dirname + '/dist',
+    filename: '[name].js',
   },
   mode: 'development',
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.css'],
   },
+
+  devtool: 'source-map',
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        include: /\.min\.js$/,
+      }),
+    ],
+  },
+  module: {
+    rules: [
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      { test: /\.tsx?$/, loader: "ts-loader" },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ]
+  },
+  plugins: [new HtmlWebpackPlugin({   
+    title: 'Production',
+    template: './public/index.html'
+  })],
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
@@ -29,10 +47,4 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
   },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    assetModuleFilename: '[name][ext]',
-  },
-};
+}
