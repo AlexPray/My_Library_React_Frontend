@@ -11,23 +11,44 @@ const Documentation = () => {
 
       <br />
       <br />
-      <br />
-      <br />
-      <br />
 
       <h1>General idea</h1>
       <div className="doc-text-container">
         <p>
-          Since I like to read books (mainly nonfiction), I wanted to build my
-          own online library. <br />
-          to do this job, I wanted to use an online database to search the books
-          I own and to add it with one click to my collection. <br /> <br />
-          I chose the Google Books API since it's free to use. <br />
-          for my devstack I chose to use React/Typescript for the front-end,
-          ExpressJS for my back-end and MySQL for my database. <br />
-          <br />
-          My goal was to learn how front-end, back-end and database work
-          together and to deepen my knowledge about React. <br />
+          Since <strong>I like to read books</strong> (mainly nonfiction) I wanted to build my
+          own online library. to do this job, I wanted to use an online database
+          to search the books I own and to add it with one click to my
+          collection. <br /> <br />I chose the{' '}
+          <a
+            href="https://developers.google.com/books/docs/overview"
+            target="_blank"
+          >
+            Google Books API
+          </a>{' '}
+          since it's free to use. for my devstack I chose to use{' '}
+          <a
+            href="https://reactjs.org/docs/getting-started.html"
+            target="_blank"
+          >
+            React
+          </a>
+          /
+          <a
+            href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+            target="_blank"
+          >
+            Typescript
+          </a>{' '}
+          for the frontend,{' '}
+          <a href="https://www.npmjs.com/package/express" target="_blank">
+            ExpressJS
+          </a>{' '}
+          for my backend and{' '}
+          <a href="https://www.npmjs.com/package/express" target="_blank">
+            MySQL
+          </a>{' '}
+          for my database. <strong>My goal</strong> was to learn how frontend, backend and
+          database work together and to <strong>deepen my knowledge</strong> about React. <br />
           <br />
         </p>
       </div>
@@ -37,23 +58,41 @@ const Documentation = () => {
         src="/images/my_library_design_draft.png"
         alt="Draft of the My Library app design"
       />
-      <p className="img-text"> &lt; I made the design draft with Figma &gt; </p>
+      <p className="img-text"> &lt; I made the design draft with {' '}
+          <a href="https://www.figma.com/" target="_blank">
+          Figma
+          </a>{' '} &gt; </p>
 
       <br />
 
       <h1>Google Books API</h1>
 
       <div className="doc-text-container">
-        <p>Get to know Google Books API and get it working:</p>
+        <p>
+          Get to know{' '}
+          <a
+            href="https://developers.google.com/books/docs/overview"
+            target="_blank"
+          >
+            Google Books API
+          </a>{' '}
+          and get it working:
+        </p>
         <p>
           After I created a draft project I read the Google Books API
           documentation to learn how it works, what the API can do and how to
-          implement it to my app. <br />
-          It is possible to get the link for the thumbnail and other information
-          like title, author and googleId from the books with a get request.{' '}
-          <br />I decided to create a Book class with the mentioned properties
-          and to fetch the data with axios in the frontend, send it to my
-          backend app and from there to my database.
+          implement it to my app. It is possible to get the{' '}
+          <a
+            href="https://developers.google.com/books/docs/v1/using#response_1"
+            target="_blank"
+          >
+            properties
+          </a>{' '}
+          for the thumbnail and other information like title, author and
+          googleId from the books with a get request. I decided to create a <strong>Book
+          class </strong>with the mentioned properties and to fetch the data with axios
+          in the frontend, send it to my backend app and from there to my
+          database.
         </p>
       </div>
       <SyntaxHighlighter
@@ -108,12 +147,33 @@ port default searchBooks
         <p>
           Since I was able to search books with the API and get the information
           I needed. I had to figure out how to save a book to my database. I
-          started an Express course on Udemy and learned a lot about requests
-          and responses, queries, try-catch, reject-resolve, .then-catch async
-          await etc. I figured out how to make a post-request using axios in the
-          frontend and express in the backend with the help of postman. This
-          whole topic took me a while to fully understand, but I've learned a
-          lot through the course, and it was a good investment of my time.
+          started an{' '}
+          <a href="https://www.npmjs.com/package/express" target="_blank">
+            Express
+          </a>{' '}
+          course on{' '}
+          <a
+            href="https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/"
+            target="_blank"
+          >
+            Udemy
+          </a>{' '}
+          and learned a lot about requests and responses, queries, try-catch,
+          reject-resolve, .then-catch, async await etc. I figured out how to make
+          a post-request using{' '}
+          <a href="https://www.npmjs.com/package/axios" target="_blank">
+            axios
+          </a>{' '}
+          in the frontend and express in the backend with the help of{' '}
+          <a
+            href="https://learning.postman.com/docs/getting-started/introduction/"
+            target="_blank"
+          >
+            postman
+          </a>{' '}
+          . This whole topic took me a while to fully understand, but I've
+          learned <strong>a lot</strong> through the course, and it was a good investment of my
+          time 😁👍
         </p>
       </div>
 
@@ -153,19 +213,35 @@ port default searchBooks
       <div className="doc-text-container">
         <p>Building a connection between my backend and my database:</p>
         <p>
-          My Express course has a big database section, but the instructor used
-          MongoDB and not MySQL. I thought i will still go through this section
-          The company where I work uses SQL, that's why I decided to still use
-          MySQL, but learning another tool meanwhile is never a bad thing,
-          right?
+          My Express course has a big database section, but the instructor used{' '}
+          <a
+            href="https://www.mongodb.com/docs/drivers/node/current/"
+            target="_blank"
+          >
+            MongoDB
+          </a>{' '}
+          and not{' '}
+          <a href="https://dev.mysql.com/doc/" target="_blank">
+            MySQL
+          </a>{' '}
+          . I thought I will still go through this section. The company where I
+          work uses SQL, that's why I decided to still use MySQL, but <strong>learning</strong> another 
+          tool meanwhile <strong>is never a bad thing</strong>, right? 😄
         </p>
         <p>
           After learning MongoDB I still needed to figure out how to use MySQL
-          with Express, so I needed to learn how to create a connection with the
-          mysql tool for node. It took me a while to set up MySQL Workbench and
-          get a working connection. I had a lot of issues, but at the end I
-          ended up using mysql2 and found a solution for every problem, one
-          after another and the connection was established.
+          with Express, so I needed to learn how to create a connection with the{' '}
+          <a href="https://dev.mysql.com/doc/" target="_blank">
+            mysql tool
+          </a>{' '}
+          for node. It took me a while to set up MySQL Workbench and get a
+          working connection. I had a lot of issues, but at the end I ended up
+          using{' '}
+          <a href="https://www.npmjs.com/package/mysql2" target="_blank">
+            mysql2
+          </a>{' '}
+          and <strong>found a solution</strong> for every problem, one after another and the
+          connection was established.
         </p>
       </div>
 
@@ -262,7 +338,7 @@ export default DbService;
       <p className="img-text">
         &lt; This piece of code took me a long time to get it to work. And I
         still need to learn stuff about error handling.
-        <br /> But once again I learned a lot and was overwhelmed when it
+        <br /> But once again I learned a lot and was <strong>overwhelmed</strong> when it
         finally worked. This is what I love about coding. &gt;
       </p>
 
@@ -271,18 +347,20 @@ export default DbService;
       <div className="doc-text-container">
         <p>Design the website and get my add- and delete button to work:</p>
         <p>
-          Finally, my requests worked, and I could console.log my data in the
+          <strong>Finally</strong>, my requests worked, and I could console.log my data in the
           browser. Now I needed to figure out how to pass data from one
           component to another. I already learned how to pass data to a child
           component with props, but didn't know how to pass it to the parent.
-          Okay, back to Udemy!
+          Okay, back to {' '}
+          <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">
+          my React course
+          </a>{' '}!
         </p>
         <p>
           I learned how to use useState and how to pass data to a parent
-          component. learned how to use useState and how to pass data to a
-          parent component. This hasn't taken me too long to learn, and I had
-          fun meanwhile. Since i like to see onscreen what i do, i guess i am
-          more of a frontend guy.
+          component. This hasn't taken me too long to learn, and I had <strong>fun on the way</strong>
+          . Since I like to see onscreen what I do, I guess I am
+          more of a <strong>frontend guy</strong> 😄
         </p>
         <p>
           Now my app is working as I expected, and I am happy with it. I want to
@@ -348,26 +426,32 @@ export default AddButton;
         <p>
           I made my first steps with React in an own project and worked the
           first time with a backend app and with a database. I learned a lot
-          during these hours, and now I know for sure, that I love to code and
+          during these hours, and now I know for sure, that <strong>I love to code</strong> and
           to learn new things. I also used Figma for the first time and like to
-          design with it. I know my goal to be a web-developer is achievable,
+          design with it. I know my goal to be a web-developer is <strong>achievable</strong>,
           but I still need to learn a lot and to be faster.
         </p>
         <p>
           I think I should have used MongoDB instead of MySQL, since express
           works better with it. And I need to plan my next project better and
           more in depth, to avoid some issues in front. For example, I coded the
-          frontend and the backend in the same VSC Workspace, what leaded to
-          issues to put the side. Why I had to split the project into two
-          afterwards. What took time, I could have saved myself. But we all make
-          mistakes to learn from them, right?
+          frontend and the backend in the same Visual Studio Code workspace, what leaded to
+          issues deploying my project correctly. Why I had to split the project into two partd
+          afterwards to fix it. This took time, I could have saved myself.  But <strong> we all make
+          mistakes to learn</strong>  from them, right? 😉
         </p>
         <p>
-          At the end I am happy with my project and can't wait to continue
+          At the end <strong>I am happy</strong> with my project and can't wait to continue
           working on it. But first I have to do some work at my workplace and to
           get more practical experience in real projects.
         </p>
       </div>
+      <br /> <br /> <br /> <br /> 
+
+      <img className='gif' src="/images/coding_gif.gif" alt="loading..." />
+
+      <br /> <br /> <br /> <br /> <br /> <br />
+
     </div>
   );
 };

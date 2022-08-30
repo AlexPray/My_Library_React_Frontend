@@ -8,8 +8,12 @@
   align-items: center;
   text-align: justify;
 }
-
-.small-text {
+.documentation p {
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 1.4em;
+}
+.documentation p.small-text {
   font-size: 14px;
 }
 
@@ -17,7 +21,7 @@
   width: 65%;
 }
 
-.img-text {
+.documentation p.img-text {
   font-style: italic;
   font-size: 14px;
   text-align: center;
@@ -30,4 +34,8 @@
 
 .doc-text-container {
   width: 65%;
+}
+
+.gif {
+  width: 20%;
 }
