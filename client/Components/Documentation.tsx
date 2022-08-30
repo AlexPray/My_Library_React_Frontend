@@ -7,7 +7,7 @@ const Documentation = () => {
   return (
     <div className="documentation">
       <header>Development documentation</header>
-      <p className="small-text">by Aleksandar Radosavljevic</p>
+      <p className="author">by Aleksandar Radosavljevic</p>
 
       <br />
       <br />
@@ -450,7 +450,11 @@ export default AddButton;
 
       <img className='gif' src="/images/coding_gif.gif" alt="loading..." />
 
-      <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br /> 
+
+      <p className="author-bottom">Aleksandar Radosavljevic</p>
+
+      <br /> <br /> <br /> <br /> 
 
     </div>
   );
