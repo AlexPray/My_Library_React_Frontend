@@ -11,6 +11,7 @@ interface NewSearchResults {
 const SearchBar: React.FC<NewSearchResults> = (props) => {
   const inputData = useRef<HTMLInputElement>(null);
   const nav = useNavigate();
+
   function handleClick() {
     searchBooks(inputData.current!.value).then((data) => {
       props.onGettingSearchResults(data);
@@ -18,9 +19,19 @@ const SearchBar: React.FC<NewSearchResults> = (props) => {
     nav('./search');
   }
 
+  function handleKeyDown (event: any) {
+    if (event.key === 'Enter') {
+      searchBooks(inputData.current!.value).then((data) => {
+        props.onGettingSearchResults(data);
+      });
+      nav('./search');
+    }
+  }
+
   return (
     <div className="search-bar">
       <input
+        onKeyDown={handleKeyDown}
         ref={inputData}
         className="search-input"
         type="text"
