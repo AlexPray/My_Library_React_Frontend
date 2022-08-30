@@ -1,7 +1,33 @@
 .documentation {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: justify;
 }
 
 .small-text {
   font-size: 14px;
+}
+
+.doc-img {
+  width: 65%;
+}
+
+.img-text {
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.doc-text-container {
+  width: 65%;
 }

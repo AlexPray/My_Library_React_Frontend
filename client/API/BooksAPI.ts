@@ -25,6 +25,6 @@ const parseResult = (data: any) => {
         });
     }
     return books;
-}
+};
 
 export default searchBooks
