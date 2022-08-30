@@ -11,7 +11,12 @@ const AddButton = (props: { book: Book }) => {
   const [message, setMessage] = useState('Added book to library');
 
   const AddButtonHandler = async () => {
-    const res = await axios.post('http://localhost:3030/addBook', book);
+    let url = 'https://mylibrary-backend-alex.herokuapp.com/addBook';
+    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:3030/addBook';
+    }
+
+    const res = await axios.post(url, book);
     const data = res.data;
     if (data) {
       if (data.error) {
