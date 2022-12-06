@@ -9,3 +9,7 @@
   content: '';
   flex: auto;
 }
+
+.message {
+  text-align: center;
+}

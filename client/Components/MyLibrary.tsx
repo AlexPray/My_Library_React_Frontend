@@ -65,7 +65,7 @@ const MyLibrary = () => {
         </div>
       );
     } else {
-      return <p>Keine Bücher gefunden</p>;
+      return <p className='message'>app is not working properly, can't connect to database</p>;
     }
 };
 
