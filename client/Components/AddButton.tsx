@@ -11,7 +11,7 @@ const AddButton = (props: { book: Book }) => {
   const [message, setMessage] = useState('Added book to library');
 
   const AddButtonHandler = async () => {
-    let url = 'https://mylibrary-backend-alex.herokuapp.com/addBook';
+    let url = 'https://my-library-backend.onrender.com/addBook';
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       url = 'http://localhost:3030/addBook';
     }

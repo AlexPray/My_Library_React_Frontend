@@ -18,7 +18,7 @@ const MyLibrary = () => {
   }, []);
 
   const fetchBooksHandler = () => {
-    let url = 'https://mylibrary-backend-alex.herokuapp.com/getBooks';
+    let url = 'https://my-library-backend.onrender.com/getBooks';
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       url = 'http://localhost:3030/getBooks';
     }

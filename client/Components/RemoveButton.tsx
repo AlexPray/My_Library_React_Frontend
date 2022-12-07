@@ -13,7 +13,7 @@ const RemoveButton = ({
 }) => {
 
   const RemoveButtonHandler = async () => {
-    let url = 'https://mylibrary-backend-alex.herokuapp.com/removeBook';
+    let url = 'https://my-library-backend.onrender.com/removeBook';
     if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
       url = 'http://localhost:3030/removeBook';
     }
