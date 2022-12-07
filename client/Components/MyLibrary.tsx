@@ -5,7 +5,6 @@ import Card from './Card';
 import Book from '../API/Book';
 import Image from './Image';
 import RemoveButton from './RemoveButton';
-import AddButton from './AddButton';
 import Notification from './Notification';
 
 const MyLibrary = () => {
@@ -65,7 +64,7 @@ const MyLibrary = () => {
         </div>
       );
     } else {
-      return <p className='message'>app is not working properly, can't connect to database</p>;
+      return <p className='message'>connecting to database or no books in library </p>;
     }
 };
 

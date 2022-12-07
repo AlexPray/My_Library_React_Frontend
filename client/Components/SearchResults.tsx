@@ -13,9 +13,9 @@ const SearchResults: FC<searchResultsProps> = (props) => {
   const { searchResults } = props;
 
   if (searchResults === undefined) {
-    return <p className="intro-text"> app is not working properly, can't connect to database </p>;
+    return <p className="intro-text"> welcome to MyLibrary app </p>;
   } else if (searchResults.length === 0) {
-      return <p className="intro-text"> app is not working properly, can't connect to database </p>;
+      return <p className="intro-text"> no searchresults </p>;
     } else {
       return (
         <div className="searchresults">
