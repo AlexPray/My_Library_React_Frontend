@@ -12,8 +12,8 @@ const Image = (props: {book: Book}) => {
     } else {
         return (
             <img className="img" src="http://books.google.com/books/content?id=WQkdAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt="Book-thumbnail" ></img>
-        )
-    }
+            )
+        }
 }
 
 export default Image
