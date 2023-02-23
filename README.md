@@ -1,6 +1,5 @@
-# Minigolf Turnier Rangliste
-**Website:** https://minigolfturnier.netlify.app/regeln-preise
-## Please note this project is discontinued and therefore hasn't been touched since somewhere in the middle of making.
+# My Library Frontend
+**Website:** https://my-library-frontend.netlify.app/
 
 ### Introduction
 
